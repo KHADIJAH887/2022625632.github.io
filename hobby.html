@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khadijah Arshad - Personal Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body {
+      background-color: #faf5ff;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #1d2951;
+      font-family: 'Segoe UI Black', sans-serif;
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+
+    .logo {
+      margin-right: auto;
+      padding: 10px 20px;
+    }
+
+    .navbar a {
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropbtn {
+      cursor: pointer;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn,
+    .dropbtn:focus {
+      background-color: #e5aa70;
+      text-transform: uppercase;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f8f8ff;
+    }
+
+    .show {
+      display: block;
+    }
+
+    .p1 {
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      font-weight: bold;
+      font-size: 25px;
+      color: #78184a;
+    }
+
+    .footer {
+      padding: 30px 0;
+      background-color: #333;
+      color: #fff0f5;
+      text-align: center;
+      font-family: 'Segoe UI Black', sans-serif;
+    }
+
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: navy;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+
+    #myBtn:hover {
+      background-color: #555;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .image-column {
+      flex: 1;
+      padding: 10px;
+    }
+
+    .text-box {
+      border: 1px solid black;
+      padding: 10px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+      <b style="font-family: Broadway; font-size: 25px; color: #f5f5f5;">
+        <a href="index.html" style="text-decoration: none; color: inherit;">Khadijah Arshad</a>
+      </b>
+    </div>
+  </div>
+
+  <h1 style="text-align:center; font-family:'Segoe UI Black'; color:#78184a;">HOBBY </h1>
+
+  <div class="container">
+    <div class="image-row">
+      <center><h1 style="background-color: #b3b3ff">Khadijah Arshad</h1>
+
+<div class="image-column">
+        <!-- Replace with appropriate images or remove if not needed -->
+        <img src="img/MY CAT.png" alt="Image 1" style="width: 50%;">
+      </div>
+    </div>
+    <div class="text-box">
+      I love my cat very much.Before this i had pet many cats but abu is one of my favourite cat.Abu duties every morning was eating and sleeping.
+    </div>
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      <h5>Copyright &copy; 2024 - Khadijah Arshad. All Rights Reserved.</h5>
+      <p>My Contact:<br> 011-7224 7443<br>2022625632@student.uitm.edu.my</p>
+    </div>
+  </footer>
+
+  <!-- Script for sticky 'Top' button and dropdown menu -->
+  <script>
+    let mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+</body>
+</html>
